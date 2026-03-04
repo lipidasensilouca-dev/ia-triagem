@@ -1,0 +1,95 @@
+/* =============================================
+   Triagem IA 
+   ============================================= */
+:root {
+  --sus-green:  #009c3b;
+  --sus-yellow: #ffdf00;
+  --sus-blue:   #002776;
+  --sus-light:  #e8f5e9;
+}
+
+.stApp { background-color: #f0f7f0; }
+
+.sus-header {
+  background: linear-gradient(135deg, var(--sus-green) 0%, var(--sus-blue) 100%);
+  color: white;
+  padding: 24px 20px 18px;
+  border-radius: 12px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.sus-header h1 { font-size: 2rem; margin: 0; font-weight: 800; }
+.sus-header p  { font-size: 1rem; margin: 6px 0 0; opacity: 0.9; }
+
+.disclaimer-box {
+  background: #fff3cd;
+  border-left: 6px solid #ffdf00;
+  border-radius: 8px;
+  padding: 14px 18px;
+  font-size: 0.95rem;
+  margin-bottom: 18px;
+  color: #4a3f00;
+  font-weight: 600;
+}
+
+.user-bubble {
+  background: #d1e7dd;
+  border-radius: 16px 16px 4px 16px;
+  padding: 14px 18px;
+  margin: 10px 0;
+  font-size: 1.05rem;
+  color: #0a3622;
+}
+.ai-bubble {
+  background: white;
+  border: 2px solid var(--sus-green);
+  border-radius: 16px 16px 16px 4px;
+  padding: 14px 18px;
+  margin: 10px 0;
+  font-size: 1.05rem;
+  color: #1a1a1a;
+}
+.ai-bubble .supervisao {
+  display: block;
+  margin-top: 12px;
+  font-size: 0.85rem;
+  color: #005f20;
+  font-weight: 700;
+  border-top: 1px dashed #009c3b;
+  padding-top: 8px;
+}
+
+.timestamp { font-size: 0.75rem; color: #888; text-align: right; }
+
+.metric-card {
+  background: white;
+  border: 2px solid var(--sus-green);
+  border-radius: 10px;
+  padding: 16px;
+  text-align: center;
+}
+.metric-card .value { font-size: 2rem; font-weight: 800; color: var(--sus-green); }
+.metric-card .label { font-size: 0.85rem; color: #555; }
+
+.stButton > button {
+  background-color: var(--sus-green) !important;
+  color: white !important;
+  font-size: 1.1rem !important;
+  font-weight: 700 !important;
+  border-radius: 10px !important;
+  padding: 12px 28px !important;
+  border: none !important;
+  width: 100%;
+}
+.stButton > button:hover { background-color: #007a2f !important; }
+
+.stTextArea textarea {
+  font-size: 1.05rem !important;
+  border: 2px solid #009c3b !important;
+  border-radius: 10px !important;
+}
+
+@media (max-width: 600px) {
+  .sus-header h1 { font-size: 1.4rem; }
+  .ai-bubble, .user-bubble { font-size: 0.95rem; }
+}
