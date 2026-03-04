@@ -46,7 +46,7 @@ with st.sidebar:
     st.markdown("### ⚙️ Configuração")
 
     api_key = st.text_input(
-        "🔑 Google AI Studio API Key",
+        "AIzaSyDE7zVzFCKDTNpp_TAEccKdO5vymasEKmI",
         type="password",
         placeholder="AIza...",
         help="Obtenha grátis em https://aistudio.google.com/apikey",
